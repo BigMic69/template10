@@ -4,3 +4,234 @@
 /*---------- MARGIN/PADDING ---------- */
 /*---------- CONTAINER ---------- */
 /*---------- TRANSITIONS ---------- */
+/* line 1, ../sass/parts/_base.sass */
+* {
+  font-size: 16px;
+  letter-spacing: 1.125px;
+  line-height: 1.75em;
+}
+
+/* line 6, ../sass/parts/_base.sass */
+body {
+  font-family: Ubuntu;
+}
+
+/* line 12, ../sass/parts/_base.sass */
+.intro-section {
+  min-height: 100%;
+  padding-top: 150px;
+  padding-bottom: 15vh;
+  text-align: center;
+  background: #fff;
+  background-image: url(../img/bg-benz.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+/* line 20, ../sass/parts/_base.sass */
+.intro-section .intro-box {
+  background: rgba(225, 225, 225, 0.6);
+}
+
+/* line 23, ../sass/parts/_base.sass */
+.about-section {
+  min-height: 100%;
+  padding-top: 150px;
+  padding-bottom: 15vh;
+  text-align: center;
+  background: #eee;
+}
+
+/* line 30, ../sass/parts/_base.sass */
+footer {
+  text-align: center;
+}
+
+/* line 1, ../sass/parts/_nav.sass */
+.navbar-default {
+  background: rgba(255, 255, 255, 0.3);
+}
+/* line 3, ../sass/parts/_nav.sass */
+.navbar-default:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+/* line 6, ../sass/parts/_nav.sass */
+nav li a {
+  font-size: 1.125em;
+  text-shadow: 0.5px 0.5px #fff;
+}
+/* line 9, ../sass/parts/_nav.sass */
+nav li a:hover {
+  text-shadow: 0.5px 0.5px #d51010;
+}
+
+/* line 12, ../sass/parts/_nav.sass */
+.navbar-brand {
+  color: #03306e !important;
+}
+/* line 14, ../sass/parts/_nav.sass */
+.navbar-brand:hover {
+  color: #d51010 !important;
+}
+
+/* line 1, ../sass/parts/_services.sass */
+.services-section {
+  min-height: 100%;
+  padding-top: 150px;
+  padding-bottom: 20vh;
+  text-align: center;
+  background: #fff;
+  background-image: url(../img/bg-spyker.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+/* line 9, ../sass/parts/_services.sass */
+.services-section .services-box {
+  background: rgba(225, 225, 225, 0.8);
+  padding: 2em 1em;
+}
+
+/* line 13, ../sass/parts/_services.sass */
+.box-container {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  background: #333;
+  color: #fff;
+  padding: 2em 1em;
+}
+@media (min-width: 900px) {
+  /* line 13, ../sass/parts/_services.sass */
+  .box-container {
+    grid-template-columns: repeat(3, 1fr);
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+/* line 27, ../sass/parts/_services.sass */
+.box-1 {
+  grid-column: span 1;
+  border: thin solid #f8f8f8;
+  padding: 2em 1em;
+}
+/* line 31, ../sass/parts/_services.sass */
+.box-1 .img-container {
+  padding: 0;
+}
+/* line 33, ../sass/parts/_services.sass */
+.box-1 .img-container img {
+  margin: 0 auto;
+}
+
+/* line 1, ../sass/parts/_contact.sass */
+.contact-section {
+  min-height: 100%;
+  padding-top: 150px;
+  padding-bottom: 15vh;
+  text-align: center;
+  background: #eee;
+}
+
+/* line 8, ../sass/parts/_contact.sass */
+#accordion {
+  max-width: 800px;
+  margin: 3em auto 5em;
+}
+/* line 11, ../sass/parts/_contact.sass */
+#accordion .panel-title {
+  text-align: left;
+  margin-left: 1em;
+}
+
+/* line 15, ../sass/parts/_contact.sass */
+#heading1,
+#heading2,
+#heading3 {
+  background: #333;
+}
+/* line 19, ../sass/parts/_contact.sass */
+#heading1 a,
+#heading2 a,
+#heading3 a {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1.5em;
+  color: #f9f9f9;
+  text-decoration: none;
+}
+/* line 24, ../sass/parts/_contact.sass */
+#heading1 a:hover,
+#heading2 a:hover,
+#heading3 a:hover {
+  color: #777;
+  text-decoration: none;
+}
+
+/* line 28, ../sass/parts/_contact.sass */
+.list-group {
+  padding: 0;
+}
+/* line 31, ../sass/parts/_toolbox.sass */
+.list-group li {
+  list-style: none;
+}
+/* line 33, ../sass/parts/_toolbox.sass */
+.list-group li a {
+  text-decoration: none;
+}
+
+/* line 31, ../sass/parts/_contact.sass */
+iframe {
+  width: 100%;
+}
+
+/* line 34, ../sass/parts/_contact.sass */
+.btn-contact {
+  font-size: 1.25em;
+  border: thin solid #333;
+  padding: 1em 0.5em;
+  border-radius: 0.5em;
+}
+/* line 39, ../sass/parts/_contact.sass */
+.btn-contact:hover {
+  background: #333;
+  color: #f0f0f0;
+  text-decoration: none;
+}
+
+/* line 1, ../sass/parts/_about.sass */
+.about-container {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: 1fr;
+  width: 100%;
+  margin: 2em auto;
+  padding: 1em;
+  border-bottom: 1px solid #333;
+}
+@media (min-width: 769px) {
+  /* line 1, ../sass/parts/_about.sass */
+  .about-container {
+    grid-template-columns: 200px repeat(3, 1fr);
+    width: 80%;
+  }
+}
+/* line 12, ../sass/parts/_about.sass */
+.about-container .img-container {
+  grid-column: 1 span;
+}
+/* line 14, ../sass/parts/_about.sass */
+.about-container .img-container .img-responsive {
+  margin: 0 auto;
+}
+/* line 16, ../sass/parts/_about.sass */
+.about-container p {
+  grid-column: 3 span;
+  display: flex;
+  align-items: center;
+}

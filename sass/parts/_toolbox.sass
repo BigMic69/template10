@@ -43,7 +43,7 @@ $font-3: 'Playfair Display', serif
 
 $clr-primary: rgb(3, 48, 110)
 $clr-primary-alpha: rgba(3, 48, 110, .5)
-$clr-secondary: rgb(26, 26, 26)
+$clr-secondary: #d51010
 $clr-secondary-alpha: rgba(25, 25, 25, .8)
 $clr-alternate: #6c6b6a
 $clr-2nd-alternate: #9A978F
@@ -87,7 +87,8 @@ $clr-orange-alpha: rgba(#e33d00, 0.5)
   margin: 0 auto
   padding: 0
   box-sizing: border-box
-
+@mixin box-pad
+  padding: 2em 1em
 @mixin space
   +cush(10vh auto, 0)
 
